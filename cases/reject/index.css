@@ -1,0 +1,18 @@
+body {
+    /* background-color: #7ac8e4be; */
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.step {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.step > img {
+    width: 100%;
+}

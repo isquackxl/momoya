@@ -1,0 +1,72 @@
+body {
+    background-color: #7ac8e4be;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.724);
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    color: #7ac8e4be;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #7ac8e4be; */
+}
+
+.tomomo {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.showloving > p{
+    font-size: 16px;
+    text-indent: 2em;
+}
+
+.btns {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.btns > button {
+    border: none;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 15px;
+}
+
+.rejectBtn {
+    background-color: rgba(45, 45, 45, 0.064);
+    color: #999;
+}
+
+.rejectBtnActive {
+    background-color: #d34040ef;
+    color: rgba(255, 255, 255, 0.724);
+}
+
+.agreeBtn {
+    margin-left: 10px;
+    background-color: #7ac8e4be;
+    color: rgba(255, 255, 255, 0.724);
+}
+
+.agreeBtnBigger {
+    font-size: 32px;
+    height: 60px !important;
+    padding: 0 40px !important;
+    border-radius: 40px !important;
+}
