@@ -70,3 +70,22 @@ body {
     padding: 0 40px !important;
     border-radius: 40px !important;
 }
+
+.footer {
+    margin: 20px;
+    color: #ffffff77;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* font-size: 16px; */
+}
+
+.footer > p {
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.footer .toRighht {
+    align-self: flex-end;
+    justify-content: end;
+}

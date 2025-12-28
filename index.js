@@ -18,8 +18,8 @@ const init = () => {
     } else {
         rejectBtn.classList.remove('rejectBtnActive');
         agreeBtn.classList.add('agreeBtnBigger');
-        rejectBtn.innerText = '不给你点了';
-        agreeBtn.innerText = '同意！！';
+        rejectBtn.innerText = '❌️ 不准点';
+        agreeBtn.innerText = '同意';
     }
 };
 
