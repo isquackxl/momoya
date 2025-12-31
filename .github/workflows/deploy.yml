@@ -36,14 +36,25 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Copy CNAME to dist
+      - name: Verify build output
+        run: |
+          echo "Checking dist directory:"
+          ls -la dist/
+          echo "Checking dist/assets:"
+          ls -la dist/assets/ || echo "No assets directory"
+          echo "Checking index.html:"
+          cat dist/index.html
+
+      - name: Copy CNAME and .nojekyll to dist
         run: |
           if [ -f CNAME ]; then
             cp CNAME dist/
           fi
-      
-      - name: Create .nojekyll file
-        run: touch dist/.nojekyll
+          if [ -f .nojekyll ]; then
+            cp .nojekyll dist/
+          else
+            touch dist/.nojekyll
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
