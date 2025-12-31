@@ -1,1 +1,0 @@
-saveValue('rejectActived', 0);
